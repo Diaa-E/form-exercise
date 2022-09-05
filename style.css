@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Norse-Bold';
+    font-weight: bold;
+    src: url("./fonts/Norse-Bold.otf") format("opentype");
+}
+
+:root{
+    font-family: "Norse-Bold", sans-serif;
+}
