@@ -90,6 +90,13 @@ footer{
     gap: 20px;
 }
 
+.field{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+
 form{
     background-color: var(--light-font);
     padding: 20px;
@@ -107,8 +114,9 @@ form input{
     border: 1px solid var(--dark-font);
     border-radius: 5px;
     color: var(--dark-font);
-    padding: 2px;
-    width: 200px;
+    padding: 5px;
+    width: 70%;
+    margin: 5px 0 ;
 }
 
 form input::placeholder{
