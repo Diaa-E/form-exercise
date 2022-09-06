@@ -12,7 +12,7 @@
     --focus: rgb(134, 211, 255);
 }
 *{
-    font-family: "Norse-Bold", sans-serif;
+    font-family: sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -47,6 +47,12 @@ footer{
     margin: 10px;
 }
 
+.image-container>h1{
+    font-family: 'Norse-Bold', sans-serif;
+    color: var(--light-font);
+    font-size: 56px;
+}
+
 .left-container{
     display: flex;
     flex-direction: column;
@@ -74,7 +80,8 @@ footer{
     align-items: flex-start;
     justify-content: center;
     gap: 10px;
-    font-size: 32px;
+    font-size: 24px;
+    font-weight: bold;
     padding: 20px;
     color: var(--dark-font);
 }
@@ -105,13 +112,13 @@ form{
     height: max(40%, 200px);
     box-shadow: 0 5px 10px var(--shadow);
     color: var(--dark-font);
-    font-size: 18px;
+    font-size: 14px;
 }
 
 
 form input{
     appearance: none;
-    font-size: 18px;
+    font-size: 14px;
     border: 1px solid var(--dark-font);
     border-radius: 5px;
     color: var(--dark-font);
@@ -131,7 +138,7 @@ form input::placeholder{
 }
 
 legend{
-    font-size: 32px;
+    font-size: 24px;
 }
 
 fieldset{
