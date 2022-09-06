@@ -10,6 +10,7 @@
     --dark-font: rgb(85, 95, 105);
     --shadow: rgb(139, 139, 139);
     --focus: rgb(134, 211, 255);
+    --error: rgb(255, 103, 103);
 }
 *{
     font-family: sans-serif;
@@ -129,13 +130,23 @@ form input{
 
 form input:focus{
     appearance: none;
+    border: 1px solid var(--focus);
     box-shadow: 0 0 15px var(--focus);
-    border-style: none;
 }
 
 form input::placeholder{
     color: var(--background);
 }
+
+form input:invalid{
+    border: 1px solid var(--error);
+    box-shadow: 0 0 15px var(--error);
+}
+
+#required::before{
+    content: "*";
+}
+
 
 legend{
     font-size: 24px;

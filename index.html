@@ -32,40 +32,43 @@
             <p>you know you want to.</p>
         </div>
 
-        <form action="" method="get">
+        <form id="signup" action="" method="get">
             <fieldset>
                 <legend>Let's do this!</legend>
 
                 <div class="form-row">
                     <div class="field">
-                        <label for="fName">First Name
+                        <label id="required" for="fName">First Name
                         </label>
                             <input
-                            type="text"
-                            id="fName"
-                            name="firstName"
-                            placeholder="Thor">
+                                type="text"
+                                id="fName"
+                                name="firstName"
+                                placeholder="Thor"
+                                required>
                     </div>
                     <div class="field">
-                        <label for="lName">Last Name
+                        <label id="required" for="lName">Last Name
                         </label>
                             <input
-                            type="text"
-                            id="lName"
-                            name="lastName"
-                            placeholder="Odinson">
+                                type="text"
+                                id="lName"
+                                name="lastName"
+                                placeholder="Odinson"
+                                required>
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div class="field">
-                        <label for="email">Email
+                        <label id="required" for="email">Email
                         </label>
                             <input
-                            type="text"
-                            id="email"
-                            name="email"
-                            placeholder="thor_odin@valhalla.com">
+                                type="text"
+                                id="email"
+                                name="email"
+                                placeholder="thor_odin@valhalla.com"
+                                required>
                     </div>
                     <div class="field">
                         <label for="phone">Phone Number
@@ -74,32 +77,37 @@
                             type="text"
                             id="phone"
                             name="phone"
-                            placeholder="xxx-xxxx-xxxx">
+                            placeholder="xxx-xxxx-xxxx"
+                            pattern="[0-9]{11}">
                     </div>
                 </div>
                     
                 <div class="form-row">
                     <div class="field">
-                        <label for="pwd">Password
+                        <label id="required" for="pwd">Password
                         </label>
                             <input
-                            type="password"
-                            id="pwd"
-                            name="password">
+                                type="password"
+                                id="pwd"
+                                name="password"
+                                required
+                                minlength="10">
                     </div>
                     <div class="field">
-                        <label for="confirmPwd">Confirm Password
+                        <label id="required" for="confirmPwd">Confirm Password
                         </label>
                             <input
-                            type="password"
-                            id="confirmPwd"
-                            name="confirmPassword">
+                                type="password"
+                                id="confirmPwd"
+                                name="confirmPassword"
+                                required
+                                minlength="10">
                     </div>
                 </div>
             </fieldset>
         </form>
         <div class="submit-box">
-            <button type="submit">Create Account</button>
+            <button form="signup" type="submit">Create Account</button>
             <p>Already have an account? <a href="">Log In</a></p>
         </div>
     </div>
