@@ -33,7 +33,7 @@
             <p>you know you want to.</p>
         </div>
 
-        <form id="signup" action="" method="get" novalidate>
+        <form id="signup" action="" method="get">
             <fieldset>
                 <legend>Let's do this!</legend>
 
@@ -42,6 +42,8 @@
                         <label id="required" for="fName">First Name
                         </label>
                             <input
+                                pattern="[a-zA-Z]+"
+                                minlength="2"
                                 type="text"
                                 id="fName"
                                 name="firstName"
@@ -52,6 +54,8 @@
                         <label id="required" for="lName">Last Name
                         </label>
                             <input
+                                pattern="[a-zA-Z]+"
+                                minlength="2"
                                 type="text"
                                 id="lName"
                                 name="lastName"
@@ -88,6 +92,7 @@
                         <label id="required" for="pwd">Password
                         </label>
                             <input
+                                minlength="8"
                                 type="password"
                                 id="pwd"
                                 name="password"
@@ -98,6 +103,7 @@
                         <label id="required" for="confirmPwd">Confirm Password
                         </label>
                             <input
+                                minlength=""8
                                 type="password"
                                 id="confirmPwd"
                                 name="confirmPassword"
