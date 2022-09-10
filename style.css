@@ -23,8 +23,8 @@
 body{
     display: flex;
     flex-direction: row;
-    width: 100vw;
-    height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
 }
 
 footer{
@@ -72,7 +72,7 @@ footer{
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    min-height: 100vh;
+    min-height: max(100%, 1erm);
     width: 70vw;
     background-color: var(--background);
 }
@@ -198,10 +198,11 @@ a{
 @media only screen and (max-width: 600px) {
     body {
       flex-direction: column;
+      align-items: center;
     }
 
     .left-container{
-        min-height: 50%;
+        min-height: auto;
         height: auto;
         width: 100%;
     }
@@ -221,6 +222,26 @@ a{
     }
 
     footer{
+        margin-top:10px;
         font-size: 5px;
+    }
+
+    .right-container{
+        align-items: center;
+        height: auto;
+        width: 100vw;
+        background-color: var(--background);
+    }
+    
+    .hero{
+        align-items: center;
+        font-size: 10px;
+        font-weight: bold;
+        width: 100vw;
+    }
+    
+    .hero p{
+        width: 90%;
+        margin: 5px auto;
     }
   }
