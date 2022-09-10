@@ -199,4 +199,28 @@ a{
     body {
       flex-direction: column;
     }
+
+    .left-container{
+        min-height: 50%;
+        height: auto;
+        width: 100%;
+    }
+
+    .image-container{
+        width: 100%;
+    }
+    
+    .image-container>img{
+        height: 50px;
+        width: auto;
+        margin: 5px;
+    }
+    
+    .image-container>h1{
+        font-size: 32px;
+    }
+
+    footer{
+        font-size: 5px;
+    }
   }
